@@ -1,9 +1,22 @@
 package uvsq21606235;
 
-public class Direction extends Position {
+public enum Direction{
 	
-	public Direction(int x, int y){
-		super(x,y);
-	}
+	 /**
+     * Nord.
+     */
+    N,
+    /**
+     * Sud.
+     */
+    S,
+    /**
+     * Ouest.
+     */
+    O,
+    /**
+     * Est.
+     */
+    E
 
 }

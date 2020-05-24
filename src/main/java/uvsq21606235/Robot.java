@@ -1,11 +1,10 @@
 package uvsq21606235;
 
-public class Robot {
+public abstract class Robot {
 	
-	private Direction direction;
-	private Position position;
 	
-	public void tourne() {}
-	public void avance() {}
+	
+	public abstract void tourne(Direction d);
+	public abstract void avance(Direction d) ;
 
 }

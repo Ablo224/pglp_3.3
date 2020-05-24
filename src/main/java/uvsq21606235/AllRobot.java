@@ -5,18 +5,27 @@ import java.util.List;
 
 public class AllRobot {
 	
-	private List<Robot> robot;
-	private List<RobotM> robotM;
+	private List<RobotMobile> robotM;
 	
 	public AllRobot() {
-		robot =  new ArrayList<Robot>();
-		robotM = new ArrayList<RobotM>();
+		robotM = new ArrayList<RobotMobile>();
 	}
 	
-	public void avancerTous() {
+	public void ajoutRobot(RobotMobile r) {
+		robotM.add(r);
+	}
+	
+	public void avance(Direction d) {
 		//seul les robots mobiles qui bouge
-		for(RobotM r: robotM) {
-			r.avance();
+		for(RobotMobile r: robotM) {
+			r.avance(d);
+		}
+	}
+	
+	public void tourne(Direction d) {
+		//seul les robots mobiles qui bouge
+		for(RobotMobile r: robotM) {
+			r.tourne(d);
 		}
 	}
 
